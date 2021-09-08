@@ -27,7 +27,6 @@ public class TriggerApplication {
     @PostMapping("/")
     public void trigger() throws InterruptedException {
         this.myService.exec();
-        SpringApplication.exit(context);
     }
 
 }
